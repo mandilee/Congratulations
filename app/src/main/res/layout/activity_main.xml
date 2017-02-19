@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="uk.co.mandilee.congratulations.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            style="@style/Title.Top"
+            android:text="C"
+            android:textColor="#ff0000" />
+
+        <TextView
+            style="@style/Title.Center"
+            android:text="o"
+            android:textColor="#FF5733" />
+
+        <TextView
+            style="@style/Title.Bottom"
+            android:text="n"
+            android:textColor="#FFAF33" />
+
+        <TextView
+            style="@style/Title.Center"
+            android:text="g"
+            android:textColor="#FFC133" />
+
+        <TextView
+            style="@style/Title.Top"
+            android:text="r"
+            android:textColor="#ECFF33" />
+
+        <TextView
+            style="@style/Title.Center"
+            android:text="a"
+            android:textColor="#90FF33" />
+
+        <TextView
+            style="@style/Title.Bottom"
+            android:text="t"
+            android:textColor="#33FF36" />
+
+        <TextView
+            style="@style/Title.Center"
+            android:text="u"
+            android:textColor="#33FF86" />
+
+        <TextView
+            style="@style/Title.Top"
+            android:text="l"
+            android:textColor="#33FFDA" />
+
+        <TextView
+            style="@style/Title.Center"
+            android:text="a"
+            android:textColor="#33CEFF" />
+
+        <TextView
+            style="@style/Title.Bottom"
+            android:text="t"
+            android:textColor="#3390FF" />
+
+        <TextView
+            style="@style/Title.Center"
+            android:text="i"
+            android:textColor="#335EFF" />
+
+        <TextView
+            style="@style/Title.Top"
+            android:text="o"
+            android:textColor="#3633FF" />
+
+        <TextView
+            style="@style/Title.Center"
+            android:text="n"
+            android:textColor="#8033FF" />
+
+        <TextView
+            style="@style/Title.Bottom"
+            android:text="s"
+            android:textColor="#C133FF" />
+
+        <TextView
+            style="@style/Title.Center"
+            android:text="!"
+            android:textColor="#FF33F6" />
+
+        <TextView
+            style="@style/Title.Top"
+            android:text="!"
+            android:textColor="#FF33BE" />
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="2"
+                    android:padding="5dp"
+                    android:text="@string/well_done_jenny"
+                    android:textSize="35sp" />
+            </TableRow>
+
+            <TableRow android:layout_weight="3">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/well_done_jenny"
+                    android:gravity="center"
+                    android:src="@drawable/jenny" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/amount"
+                    android:textSize="36sp" />
+            </TableRow>
+
+            <TableRow android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/cancer_research_uk"
+                    android:src="@drawable/cruk" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/just_giving"
+                    android:src="@drawable/just_giving" />
+            </TableRow>
+
+            <TableRow android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/donate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_span="2"
+                    android:background="@drawable/donate_button"
+                    android:text="@string/donate" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
