@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#222"
+        android:background="@color/colorPrimaryDark"
         android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
@@ -18,88 +18,88 @@
 
         <TextView
             style="@style/Title.Top"
-            android:text="C"
-            android:textColor="#ff0000" />
+            android:text="@string/c"
+            android:textColor="@color/colourOne" />
 
         <TextView
             style="@style/Title.Center"
-            android:text="o"
-            android:textColor="#FF5733" />
+            android:text="@string/o"
+            android:textColor="@color/colourTwo" />
 
         <TextView
             style="@style/Title.Bottom"
-            android:text="n"
-            android:textColor="#FFAF33" />
+            android:text="@string/n"
+            android:textColor="@color/colourThree" />
 
         <TextView
             style="@style/Title.Center"
-            android:text="g"
-            android:textColor="#FFC133" />
+            android:text="@string/g"
+            android:textColor="@color/colourFour" />
 
         <TextView
             style="@style/Title.Top"
-            android:text="r"
-            android:textColor="#ECFF33" />
+            android:text="@string/r"
+            android:textColor="@color/colourFive" />
 
         <TextView
             style="@style/Title.Center"
-            android:text="a"
-            android:textColor="#90FF33" />
+            android:text="@string/a"
+            android:textColor="@color/colourSix" />
 
         <TextView
             style="@style/Title.Bottom"
-            android:text="t"
-            android:textColor="#33FF36" />
+            android:text="@string/t"
+            android:textColor="@color/colourSeven" />
 
         <TextView
             style="@style/Title.Center"
-            android:text="u"
-            android:textColor="#33FF86" />
+            android:text="@string/u"
+            android:textColor="@color/colourEight" />
 
         <TextView
             style="@style/Title.Top"
-            android:text="l"
-            android:textColor="#33FFDA" />
+            android:text="@string/l"
+            android:textColor="@color/colourNine" />
 
         <TextView
             style="@style/Title.Center"
-            android:text="a"
-            android:textColor="#33CEFF" />
+            android:text="@string/a"
+            android:textColor="@color/colourTen" />
 
         <TextView
             style="@style/Title.Bottom"
-            android:text="t"
-            android:textColor="#3390FF" />
+            android:text="@string/t"
+            android:textColor="@color/colourEleven" />
 
         <TextView
             style="@style/Title.Center"
-            android:text="i"
-            android:textColor="#335EFF" />
+            android:text="@string/i"
+            android:textColor="@color/colourTwelve" />
 
         <TextView
             style="@style/Title.Top"
-            android:text="o"
-            android:textColor="#3633FF" />
+            android:text="@string/o"
+            android:textColor="@color/colourThirteen" />
 
         <TextView
             style="@style/Title.Center"
-            android:text="n"
-            android:textColor="#8033FF" />
+            android:text="@string/n"
+            android:textColor="@color/colourFourteen" />
 
         <TextView
             style="@style/Title.Bottom"
-            android:text="s"
-            android:textColor="#C133FF" />
+            android:text="@string/s"
+            android:textColor="@color/colourFifteen" />
 
         <TextView
             style="@style/Title.Center"
-            android:text="!"
-            android:textColor="#FF33F6" />
+            android:text="@string/exclam"
+            android:textColor="@color/colourSixteen" />
 
         <TextView
             style="@style/Title.Top"
-            android:text="!"
-            android:textColor="#FF33BE" />
+            android:text="@string/exclam"
+            android:textColor="@color/colourSeventeen" />
     </LinearLayout>
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -126,9 +126,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_span="2"
-                    android:padding="5dp"
+                    android:padding="@dimen/randomPadding"
                     android:text="@string/well_done_jenny"
-                    android:textSize="35sp" />
+                    android:textSize="@dimen/mainTextSize" />
             </TableRow>
 
             <TableRow android:layout_weight="3">
@@ -136,7 +136,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp"
+                    android:layout_margin="@dimen/imagePadding"
                     android:contentDescription="@string/well_done_jenny"
                     android:gravity="center"
                     android:src="@drawable/jenny" />
@@ -147,7 +147,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/amount"
-                    android:textSize="36sp" />
+                    android:textSize="@dimen/mainTextSize" />
             </TableRow>
 
             <TableRow android:layout_weight="1">

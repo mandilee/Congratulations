@@ -5,4 +5,16 @@
     <string name="cancer_research_uk">Cancer Research UK</string>
     <string name="just_giving">Just Giving</string>
     <string name="donate">Donate</string>
+    <string name="c">C</string>
+    <string name="o">o</string>
+    <string name="n">n</string>
+    <string name="g">g</string>
+    <string name="r">r</string>
+    <string name="a">a</string>
+    <string name="t">t</string>
+    <string name="u">u</string>
+    <string name="l">l</string>
+    <string name="i">i</string>
+    <string name="s">s</string>
+    <string name="exclam">!</string>
 </resources>
